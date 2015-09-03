@@ -1,19 +1,31 @@
 body{
   font-family: Quicksand;
+  background-image: radial-gradient(circle, pink, lightblue);
 }
 th{
+  text-decoration: underline; 
+  font-size: 20px;
   padding: 10px 0 10px 0;
-  width:100px;
+  min-width: 124px;
 }
 td{
   padding: 5px 0 10px 15px;
 
   cursor:pointer;
 }
+td:first-child{
+  font-weight: bold;
+}
 div{
-  margin-left:38%;
+  margin-left:30%;
 }
 audio{
-  padding-top: 140px;
-  min-width:40%;
+  padding: 50px 0 15px 0;
+  min-width:50%;
+}
+
+#title{
+  font-family: 'Sigmar One', cursive;
+  font-size: 24px;
+  padding: 45px 0 0 10px;
 }

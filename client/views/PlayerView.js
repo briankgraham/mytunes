@@ -11,9 +11,6 @@ var PlayerView = Backbone.View.extend({
     }
   },
 
-  initialize: function() {
-    //this.model.on('dequeue', this.setSong, this);
-  },
 
   setSong: function(song) {
     this.model = song;

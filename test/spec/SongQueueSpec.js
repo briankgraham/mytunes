@@ -73,6 +73,15 @@ describe('SongQueue', function() {
       SongQueue.prototype.remove.restore();
     });
   });
+  describe('when a song is removed by user click', function() {
+      it('removes the song', function() {
+      removeSpy = sinon.spy(SongQueue.prototype, 'remove');
+      var songQueue = new SongQueue([songData1, songData2]);
+      songQueue.at(1).dequeue();
+      expect(removeSpy).to.have.been.called;
+      SongQueue.prototype.remove.restore(); 
+    });
+  });
 
   describe('playFirst', function() {
     it('plays the first song in the queue', function() {
