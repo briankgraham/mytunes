@@ -1,3 +1,19 @@
 body{
-  font-family: Quicksand
+  font-family: Quicksand;
+}
+th{
+  padding: 10px 0 10px 0;
+  width:100px;
+}
+td{
+  padding: 5px 0 10px 15px;
+
+  cursor:pointer;
+}
+div{
+  margin-left:38%;
+}
+audio{
+  padding-top: 140px;
+  min-width:40%;
 }
